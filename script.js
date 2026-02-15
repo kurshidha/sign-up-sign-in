@@ -47,7 +47,7 @@ function signup() {
     return;
   }
 
-  if (password.value !== confirmPassword.value) {
+  if (password.value.trim() !== confirmPassword.value.trim()) {
     showMsg("Passwords do not match", "red");
     return;
   }
